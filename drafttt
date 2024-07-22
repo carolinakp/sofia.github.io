@@ -1,0 +1,311 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.header-container {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-button {
+    all: unset;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: #fff; /* Cambiar el color del texto si es necesario */
+}
+
+.home-button {
+    font-weight: bold;
+    color: #c52121;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    background-color: #c52121;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cta-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.cta-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.cta-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.cta-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.main-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box {
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.chat-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chat-input {
+    all: unset;
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    background-color: #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.chat-button {
+    all: unset;
+    padding: 10px 20px;
+    background-color: #c52121;
+    color: #fff;
+    border-radius:  50px 50px 50px  50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+.chat-button a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Text color */
+    display: block; /* Ensure the link fills the button */
+    width: 100%; /* Full width of the button */
+    height: 100%; /* Full height of the button */
+    padding: 10px 20px; /* Padding for the link */
+}
+.footer {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en una nueva línea si no caben */
+    gap: 20px; /* Espacio entre los botones */
+}
+.service-button a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    width: 100%; /* Asegurar que el enlace ocupe todo el botón */
+    height: 100%; /* Asegurar que el enlace ocupe todo el botón */
+}
+.service-button[data-service="instalacion"] {
+    background-color: #ff5733; /* Color rojo */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.service-button[data-service="mantenimiento"] {
+    background-color: #3498db; /* Color azul */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.service-button[data-service="consultoria"] {
+    background-color: #2ecc71; /* Color verde */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.service-button img {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    max-width: 50px; /* Tamaño máximo del ícono */
+    height: auto;
+}
+
+df-messenger {
+    z-index: 999;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #ffffff;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #ffd8d8;
+    flex: 1;
+    width: 100%;
+}

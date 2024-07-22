@@ -1,0 +1,81 @@
+
+# PDF
+import fitz  # PyMuPDF
+import os
+
+def extract_text_from_pdfs(pdf_directory):
+    text_data = {}
+    for filename in os.listdir(pdf_directory):
+        if filename.endswith('.pdf'):
+            with fitz.open(os.path.join(pdf_directory, filename)) as pdf:
+                text = ""
+                for page in pdf:
+                    text += page.get_text()
+                text_data[filename] = text
+    return text_data
+
+pdf_texts = extract_text_from_pdfs('path/to/pdf/directory')
+
+import fitz  # PyMuPDF
+import os
+
+def extract_text_from_pdfs(pdf_directory):
+    text_data = {}
+    for filename in os.listdir(pdf_directory):
+        if filename.endswith('.pdf'):
+            with fitz.open(os.path.join(pdf_directory, filename)) as pdf:
+                text = ""
+                for page in pdf:
+                    text += page.get_text()
+                text_data[filename] = text
+    return text_data
+
+pdf_texts = extract_text_from_pdfs('path/to/pdf/directory')
+
+# EXCEL
+import pandas as pd
+
+def read_excel_data(excel_file):
+    return pd.read_excel(excel_file)
+
+product_data = read_excel_data('path/to/excel/file.xlsx')
+
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+
+# BACKENED
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    req = request.get_json(silent=True, force=True)
+    intent = req.get('queryResult').get('intent').get('displayName')
+
+    if intent == 'ProductRecommendation':
+        # Process and generate recommendations
+        product_recommendations = get_product_recommendations(req)
+        return jsonify({'fulfillmentText': product_recommendations})
+
+    return jsonify({'fulfillmentText': 'Intent not recognized'})
+
+def get_product_recommendations(req):
+    # Implement recommendation logic here
+    return "Recommended products are XYZ"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# Extract Features and Train Models:
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+def build_recommendation_model(data):
+    tfidf = TfidfVectorizer(stop_words='english')
+    tfidf_matrix = tfidf.fit_transform(data)
+    cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
+    return cosine_sim
+
+# Combine all text data for training
+combined_data = pdf_texts.values() + [video_metadata['items'][0]['snippet']['description']] + product_data['Descriptions'].tolist()
+recommendation_model = build_recommendation_model(combined_data)

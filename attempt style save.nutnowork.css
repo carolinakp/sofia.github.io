@@ -1,0 +1,238 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.header-container {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 60px;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: #000000; /* Cambiar el color del texto si es necesario */
+    
+}
+.menu-button a: hover{
+    color: #c52121;
+}
+
+.home-button a{
+    font-weight: bold;
+    color: #c52121;
+}
+.cta-container {
+    display: flex;
+    align-items: center;
+    background-color: #c52121;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.cta-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.cta-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+
+.cta-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.cta-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.info-box {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.welcome-text {
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.open-chatbot-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c52121;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.open-chatbot-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.open-chatbot-button:hover {
+    background-color: #a51616;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
